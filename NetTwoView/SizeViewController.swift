@@ -8,11 +8,13 @@
 import UIKit
 
 class SizeViewController: UIViewController {
-
+    var doggy:Dog!
+    @IBOutlet weak var sizeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        sizeLabel.text = String(doggy.fileSizeBytes)
     }
     
 
