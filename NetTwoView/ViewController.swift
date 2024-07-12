@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    let francURL = "https://random.dog/3a085a78-900e-4206-a864-74c31d4d696b.jpg"
+    var buttonPressedCount = 0
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var urlLabel: UILabel!
     
@@ -16,16 +19,42 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        parsingJSON()
-        fetchImage()
+//        parsingJSON()
+//        fetchImage()
+        buttonPressed()
     }
 
     
     
-    @IBAction func buttonPressed() {
-        parsingJSON()
-        fetchImage()
+    @IBAction func seeBull(_ sender: UIButton) {
+        sender.pulsate()
         
+        guard let url = URL(string: "https://random.dog/3a085a78-900e-4206-a864-74c31d4d696b.jpg") else { return }
+                  URLSession.shared.dataTask(with: url) { data, _, _ in
+                      guard let data = data else { return }
+                      guard  let image = UIImage(data: data) else { return }
+                      DispatchQueue.main.async {
+                          self.imageView.image = image
+                      }
+                  }.resume()
+        
+    }
+    @IBAction func buttonPressed() {
+   
+//        if buttonPressedCount == 23 || buttonPressedCount == 9 || buttonPressedCount == 16 {
+//            guard let url = URL(string: "https://random.dog/3a085a78-900e-4206-a864-74c31d4d696b.jpg") else { return }
+//            URLSession.shared.dataTask(with: url) { data, _, _ in
+//                guard let data = data else { return }
+//                guard  let image = UIImage(data: data) else { return }
+//                DispatchQueue.main.async {
+//                    self.imageView.image = image
+//                }
+//            }.resume()
+//        }else{
+            parsingJSON()
+            fetchImage()
+//        }
+//        buttonPressedCount += 1
     }
     
     func parsingJSON() {

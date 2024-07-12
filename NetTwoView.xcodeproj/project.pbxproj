@@ -15,6 +15,7 @@
 		6CC9E8FB2C3D96DC006C3954 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6CC9E8FA2C3D96DC006C3954 /* Base */; };
 		6CC9E9032C3D97B3006C3954 /* SizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC9E9022C3D97B3006C3954 /* SizeViewController.swift */; };
 		6CC9E9052C3D993D006C3954 /* struct Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC9E9042C3D993D006C3954 /* struct Dog.swift */; };
+		6CDB3F332C417A1900D06850 /* extension + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDB3F322C417A1900D06850 /* extension + UIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6CC9E8FC2C3D96DC006C3954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CC9E9022C3D97B3006C3954 /* SizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeViewController.swift; sourceTree = "<group>"; };
 		6CC9E9042C3D993D006C3954 /* struct Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "struct Dog.swift"; sourceTree = "<group>"; };
+		6CDB3F322C417A1900D06850 /* extension + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension + UIButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				6CC9E8EE2C3D96DB006C3954 /* AppDelegate.swift */,
 				6CC9E8F02C3D96DB006C3954 /* SceneDelegate.swift */,
 				6CC9E8F22C3D96DB006C3954 /* ViewController.swift */,
+				6CDB3F322C417A1900D06850 /* extension + UIButton.swift */,
 				6CC9E8F42C3D96DB006C3954 /* Main.storyboard */,
 				6CC9E9022C3D97B3006C3954 /* SizeViewController.swift */,
 				6CC9E8F72C3D96DC006C3954 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				6CC9E8EF2C3D96DB006C3954 /* AppDelegate.swift in Sources */,
 				6CC9E9052C3D993D006C3954 /* struct Dog.swift in Sources */,
 				6CC9E8F12C3D96DB006C3954 /* SceneDelegate.swift in Sources */,
+				6CDB3F332C417A1900D06850 /* extension + UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
